@@ -128,6 +128,33 @@ public class Main {
 
     }
 
+    public static void linkedList() {
+
+        Customer2 customer = new Customer2("Time", 23.23);
+        Customer2 anotherCustomer;
+        anotherCustomer = customer;
+        anotherCustomer.setBalance(12.18);
+        System.out.println("balance for " + customer.getName() + " is " + customer.getBalance());
+
+        ArrayList<Integer> intList = new ArrayList<Integer>();
+
+        intList.add(1);
+        intList.add(2);
+        intList.add(5);
+
+        for( int i = 0; i<intList.size(); i++) {
+            System.out.println(i + ": " + intList.get(i));
+        }
+
+        intList.add(1,8);
+
+        for( int i = 0; i<intList.size(); i++) {
+            System.out.println(i + ": " + intList.get(i));
+        }
+
+        
+    }
+
 
 
 
@@ -136,7 +163,8 @@ public class Main {
 
     public static void main(String[] args) {
 //        AutoboxingAndUnboxing();
-        AutoboxingAndUnboxingChallenge();
+//        AutoboxingAndUnboxingChallenge();
+        linkedList();
     }
 
 }
