@@ -152,7 +152,7 @@ public class Main {
             System.out.println(i + ": " + intList.get(i));
         }
 
-        
+
     }
 
 
